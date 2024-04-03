@@ -1,0 +1,78 @@
+{
+  "project_info": {
+    "project_number": "416521647723",
+    "project_id": "privateclasses-65609",
+    "storage_bucket": "privateclasses-65609.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416521647723:android:d7c28c5d7f36722736232e",
+        "android_client_info": {
+          "package_name": "com.jadara.private_courses.private_courses"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "416521647723-89ch5ulkafk4ro7m13tfvmcpe0dm1i89.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jadara.private_courses.private_courses",
+            "certificate_hash": "b6d21254893b81b54d15a6120a2d397543ff7b16"
+          }
+        },
+        {
+          "client_id": "416521647723-eesf2mbkmjskv17c4ljbrs91765uu03o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jadara.private_courses.private_courses",
+            "certificate_hash": "60716ecf9e370b3f9ec285c376aa891887888a5f"
+          }
+        },
+        {
+          "client_id": "416521647723-fl5cc0np6tthqut13deuo17qv6en4iid.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jadara.private_courses.private_courses",
+            "certificate_hash": "e941ae1418ce7053a31e2f6cfb534b9deb69f87c"
+          }
+        },
+        {
+          "client_id": "416521647723-isut5o7lb2th3q7rtne03404stnaa26h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jadara.private_courses.private_courses",
+            "certificate_hash": "c1b6c301d8096af7f79a93c5649bf763177cd7a6"
+          }
+        },
+        {
+          "client_id": "416521647723-4hvgmuvjosd7j8vhg5lmtlorj1vjuapg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8CQhjm5hyUc1qXOZFLCMi-dFCxcWzlks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "416521647723-4hvgmuvjosd7j8vhg5lmtlorj1vjuapg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "416521647723-39bssnvpf0dca4e1fauf7rld4lstru07.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.jadara.privatecourses.privateCourses"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
