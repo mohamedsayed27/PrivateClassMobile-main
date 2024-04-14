@@ -47,21 +47,7 @@ void main() async {
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown
   ]);
-  BlocOverrides.runZoned(
-          () {
-        runApp(
-            EasyLocalization(
-                useOnlyLangCode: true,
-                supportedLocales: const [Locale('en'), Locale('ar')],
-                startLocale: const Locale('ar'),
-                path: 'assets/translations',
-                fallbackLocale: const Locale('ar'),
-                child: MyApp()
-            )
-        );
-      },
-      blocObserver: MyBlocObserver()
-  );
+  Bloc.observer = MyBlocObserver();
   FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
   flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
   await flutterLocalNotificationsPlugin.resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>()?.createNotificationChannel(channel);
@@ -79,7 +65,16 @@ void main() async {
   });
 
   FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
-
+  runApp(
+      EasyLocalization(
+          useOnlyLangCode: true,
+          supportedLocales: const [Locale('en'), Locale('ar')],
+          startLocale: const Locale('ar'),
+          path: 'assets/translations',
+          fallbackLocale: const Locale('ar'),
+          child: MyApp()
+      )
+  );
 }
 
 class MyApp extends StatefulWidget {
@@ -95,6 +90,7 @@ class _MyAppState extends State<MyApp> {
   final navigatorKey = GlobalKey<NavigatorState>();
   bool isOpened = false;
   void initState() {
+    super.initState();
     FirebaseMessaging.instance.requestPermission();
     var initialzationSettingsAndroid =
     AndroidInitializationSettings('@mipmap/launcher_icon');
@@ -143,6 +139,7 @@ class _MyAppState extends State<MyApp> {
             });
       }
     });
+
     ///-*-///
     connectivitySubscription = Connectivity().onConnectivityChanged.listen((ConnectivityResult result) {
       print('Current connectivity status: $result');
@@ -171,7 +168,7 @@ class _MyAppState extends State<MyApp> {
         print('isOpened value 2' + isOpened.toString());
       }
     });
-    super.initState();
+
   }
   @override
   Widget build(BuildContext context) {

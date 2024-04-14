@@ -71,6 +71,7 @@ class PaymentCourseScreen extends StatelessWidget {
                         child: CreditCard(
                           locale: context.locale.languageCode =="ar"?Localization.ar():Localization.en(),
                           config: PaymentConfig(
+
                             publishableApiKey: paymentKey,
                             amount: coursePrice*100, // SAR 257.58
                             description: context.locale.languageCode =="ar"? 'أكاديمية دروس خصوصية':'Private Classes',

@@ -25,7 +25,7 @@ class CustomZoomDrawer extends StatelessWidget {
           borderRadius: width(context) * 0.07,
           showShadow: true,
           angle: 0.0,
-          style: DrawerStyle.Style1,
+          style: DrawerStyle.style1,
           slideWidth: context.locale.languageCode == 'ar' ? width(context) * 0.66 : width(context) * 0.74,
           shadowLayer2Color: AppColors.whiteColor.withOpacity(0.3),
           shadowLayer1Color: Colors.transparent,
